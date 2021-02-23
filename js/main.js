@@ -135,16 +135,16 @@ function checkIfWon() {
 
 // Audio
 const stopSound = [
-  new Audio("https://milicaposa.github.io/SlotGame_JS/sounds/stop-sound.wav"),
-  new Audio("https://milicaposa.github.io/SlotGame_JS/sounds/stop-sound.wav"),
-  new Audio("https://milicaposa.github.io/SlotGame_JS/sounds/stop-sound.wav"),
+  new Audio("https://milicaposa.github.io/slot-game-js/sounds/stop-sound.wav"),
+  new Audio("https://milicaposa.github.io/slot-game-js/sounds/stop-sound.wav"),
+  new Audio("https://milicaposa.github.io/slot-game-js/sounds/stop-sound.wav"),
 ];
 
 const winSound = new Audio(
-  "https://milicaposa.github.io/SlotGame_JS/sounds/win-sound.wav"
+  "https://milicaposa.github.io/slot-game-js/sounds/win-sound.wav"
 );
 const loseSound = new Audio(
-  "https://milicaposa.github.io/SlotGame_JS/sounds/lose-sound.wav"
+  "https://milicaposa.github.io/slot-game-js/sounds/lose-sound.wav"
 );
 
 let audio = false;
