@@ -1,0 +1,283 @@
+#status {
+  grid-area: status;
+  text-align: center;
+  margin: 10px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+.s1 {
+  background-image: url("../../img/apple.png");
+}
+
+.s2 {
+  background-image: url("../../img/beet.png");
+}
+
+.s3 {
+  background-image: url("../../img/bell-pepper.png");
+}
+
+.s4 {
+  background-image: url("../../img/broccoli.png");
+}
+
+.s5 {
+  background-image: url("../../img/cherry.png");
+}
+
+.s6 {
+  background-image: url("../../img/eggplant.png");
+}
+
+.s7 {
+  background-image: url("../../img/mushroom.png");
+}
+
+.s8 {
+  background-image: url("../../img/orange.png");
+}
+
+.s9 {
+  background-image: url("../../img/plum.png");
+}
+
+.s10 {
+  background-image: url("../../img/raspberry.png");
+}
+
+.s11 {
+  background-image: url("../../img/strawberry.png");
+}
+
+.s12 {
+  background-image: url("../../img/watermelon.png");
+}
+
+#reels {
+  grid-area: reels;
+  display: grid;
+  grid-template-areas: "reel1 reel2 reel3";
+  justify-items: center;
+  background-color: #a4bed1;
+  padding: 10px 0;
+  border: 2px solid #dde5eb;
+  border-radius: 15px;
+}
+#reels #reel1 {
+  grid-area: reel1;
+}
+#reels #reel2 {
+  grid-area: reel2;
+}
+#reels #reel3 {
+  grid-area: reel3;
+}
+#reels #reel1,
+#reels #reel2,
+#reels #reel3 {
+  background-size: 150px;
+  width: 150px;
+  height: 150px;
+}
+
+.button-section {
+  grid-area: buttons;
+  display: grid;
+  grid-template-areas: ". . bet-one-btn . bet-max-btn . . spin-btn spin-btn";
+}
+.button-section .btn {
+  color: #ffffff;
+  border: 2px solid #dde5eb;
+  outline: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 25px;
+  padding: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.button-section .bet-btn {
+  background-color: #c53333;
+}
+.button-section .bet-btn:hover {
+  background-color: #9c2828;
+}
+.button-section .bet-btn:disabled {
+  background-color: #9c2828;
+  color: #272727;
+  border-color: #272727;
+  cursor: not-allowed;
+}
+.button-section .bet-one-btn {
+  grid-area: bet-one-btn;
+}
+.button-section .bet-max-btn {
+  grid-area: bet-max-btn;
+}
+.button-section .spin-btn {
+  grid-area: spin-btn;
+  background-color: #6cb65c;
+}
+.button-section .spin-btn:hover {
+  background-color: #59914d;
+}
+.button-section .spin-btn:disabled {
+  background-color: #59914d;
+  color: #272727;
+  border-color: #272727;
+  cursor: not-allowed;
+}
+
+.credits-section {
+  display: grid;
+  grid-area: credits;
+  grid-template-areas: ". . bet-box paid-box";
+  margin: 60px 0 20px 0;
+}
+.credits-section .credit-box {
+  justify-self: end;
+}
+.credits-section .credit-box span {
+  display: block;
+  text-align: center;
+  margin-top: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.credits-section .credit-bet-box {
+  grid-area: bet-box;
+  width: 100px;
+}
+.credits-section .credit-paid-box {
+  grid-area: paid-box;
+  width: 250px;
+}
+.credits-section .credit-display-box {
+  background-color: #272727;
+  border: 2px solid #dde5eb;
+  border-radius: 5px;
+  padding: 25px 10px;
+  font-size: 25px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #272727;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  display: grid;
+  grid-template-areas: "status status status" "reels reels reels" "credits credits credits" "buttons buttons buttons";
+  grid-row-gap: 20px;
+  border-radius: 5px;
+  background-color: #414141;
+  border: 2px solid #dde5eb;
+  margin: 30px auto 0 auto;
+  padding: 20px 15px;
+  max-width: 600px;
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    max-width: 80%;
+    font-size: 20px;
+  }
+
+  #status {
+    font-size: 22px;
+  }
+
+  #reels #reel1,
+#reels #reel2,
+#reels #reel3 {
+    background-size: 130px;
+    width: 130px;
+    height: 130px;
+  }
+
+  .credits-section .credit-display-box {
+    font-size: 22px;
+    padding: 20px 10px;
+  }
+
+  .button-section .btn {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 540px) {
+  #status {
+    font-size: 20px;
+  }
+
+  #reels #reel1,
+#reels #reel2,
+#reels #reel3 {
+    background-size: 90px;
+    width: 90px;
+    height: 90px;
+  }
+
+  .credits-section {
+    margin: 40px 0 15px 0;
+  }
+  .credits-section .credit-box span {
+    font-size: 12px;
+  }
+  .credits-section .credit-display-box {
+    font-size: 20px;
+  }
+  .credits-section .credit-bet-box {
+    width: 80px;
+  }
+  .credits-section .credit-paid-box {
+    width: 180px;
+  }
+
+  .button-section .btn {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 385px) {
+  #status {
+    font-size: 18px;
+  }
+
+  #reels #reel1,
+#reels #reel2,
+#reels #reel3 {
+    background-size: 75px;
+    width: 75px;
+    height: 75px;
+  }
+
+  .credits-section {
+    margin: 30px 0 5px 0;
+  }
+  .credits-section .credit-display-box {
+    font-size: 18px;
+    padding: 15px 10px;
+  }
+  .credits-section .credit-bet-box {
+    width: 60px;
+  }
+  .credits-section .credit-paid-box {
+    width: 130px;
+  }
+
+  .button-section .btn {
+    padding: 5px 0;
+    font-size: 18px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

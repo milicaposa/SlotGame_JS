@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slot Game - Vanilla</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="style/css/style.css">
+</head>
+
+<body>
+    <main>
+        <!-- Status section -->
+        <section id="status">Good luck! :)</section>
+
+        <!-- Reels section -->
+        <section id="reels">
+            <div id="reel1" class="s1"></div>
+            <div id="reel2" class="s2"></div>
+            <div id="reel3" class="s3"></div>
+        </section>
+
+        <!-- Credits section -->
+        <section class="credits-section">
+            <div class="credit-box credit-bet-box">
+                <div class="credit-display-box bet-box"></div>
+                <span>Bet</span>
+            </div>
+            <div class="credit-box credit-paid-box">
+                <div class="credit-display-box paid-box"></div>
+                <span>Money</span>
+            </div>
+        </section>
+
+        <!-- Buttons section -->
+        <section class="button-section">
+            <button class="btn bet-btn bet-one-btn" onclick="handleBetOne()">Bet </br> one</button>
+            <button class="btn bet-btn bet-max-btn" onclick="handleBetMax()">Bet </br> max</button>
+            <button class="btn spin-btn" onclick="handleSpin()">Spin</button>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

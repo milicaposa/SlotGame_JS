@@ -1,0 +1,56 @@
+.button-section {
+  grid-area: buttons;
+  display: grid;
+  grid-template-areas: ". . bet-one-btn . bet-max-btn . . spin-btn spin-btn";
+
+  .btn {
+    color: $white-color;
+    border: 2px solid $border-color;
+    outline: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    padding: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .bet-btn {
+    background-color: $bet-btn-color;
+
+    &:hover {
+      background-color: $bet-btn-hover-color;
+    }
+
+    &:disabled {
+      background-color: $bet-btn-hover-color;
+      color: $primary-color;
+      border-color: $primary-color;
+      cursor: not-allowed;
+    }
+  }
+
+  .bet-one-btn {
+    grid-area: bet-one-btn;
+  }
+
+  .bet-max-btn {
+    grid-area: bet-max-btn;
+  }
+
+  .spin-btn {
+    grid-area: spin-btn;
+    background-color: $spin-btn-color;
+
+    &:hover {
+      background-color: $spin-btn-hover-color;
+    }
+
+    &:disabled {
+      background-color: $spin-btn-hover-color;
+      color: $primary-color;
+      border-color: $primary-color;
+      cursor: not-allowed;
+    }
+  }
+}

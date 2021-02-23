@@ -1,0 +1,28 @@
+#reels {
+  grid-area: reels;
+  display: grid;
+  grid-template-areas: "reel1 reel2 reel3";
+  justify-items: center;
+  background-color: $reel-color;
+  padding: 10px 0;
+  border: 2px solid $border-color;
+  border-radius: 15px;
+
+  #reel1 {
+    grid-area: reel1;
+  }
+  #reel2 {
+    grid-area: reel2;
+  }
+  #reel3 {
+    grid-area: reel3;
+  }
+
+  #reel1,
+  #reel2,
+  #reel3 {
+    background-size: 150px;
+    width: 150px;
+    height: 150px;
+  }
+}

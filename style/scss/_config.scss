@@ -1,0 +1,32 @@
+$primary-color: #272727;
+
+$slot-color: #414141;
+$reel-color: #a4bed1;
+
+$border-color: #dde5eb;
+
+$white-color: #ffffff;
+
+$bet-btn-color: #c53333;
+$bet-btn-hover-color: #9c2828;
+
+$spin-btn-color: #6cb65c;
+$spin-btn-hover-color: #59914d;
+
+@mixin media-md {
+  @media screen and (max-width: 800px) {
+    @content;
+  }
+}
+
+@mixin media-sm {
+  @media screen and (max-width: 540px) {
+    @content;
+  }
+}
+
+@mixin media-xs {
+  @media screen and (max-width: 385px) {
+    @content;
+  }
+}
